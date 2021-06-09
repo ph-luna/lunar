@@ -54,8 +54,8 @@ export const Screen = tw.div`
   flex
   justify-center
   items-center
-  relative
-  overflow-hidden
+  fixed
+  text-white
 `
 
 export const Eclipse = styled.div`

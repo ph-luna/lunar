@@ -20,6 +20,15 @@ module.exports = {
       green: colors.green,
       blue: colors.blue,
       pink: colors.pink
+    },
+    fontFamily: {
+      'rubik': ['Rubik', 'sans-serif'],
+      'slab': ['"Josefin Slab"', 'serif']
+    },
+    extend: {
+      fontFamily: {
+        'michroma': ['Michroma', 'sans-serif']
+      }
     }
   },
   variants: {
