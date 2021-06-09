@@ -1,8 +1,8 @@
 import { FC } from 'react'
 
-import * as S from '@styles/components/Background'
+import * as S from 'styles/components/Background'
 
-import useWindowSize from '../hooks/useWindowSize'
+import useWindowSize from 'hooks/useWindowSize'
 
 const Background: FC = () => {
   const windowSize = useWindowSize()

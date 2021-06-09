@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Image from 'next/image'
 
-import * as S from '@styles/components/NavBar.styles'
+import * as S from 'styles/components/NavBar.styles'
 
 const NavBar: FC = () => {
   return (
