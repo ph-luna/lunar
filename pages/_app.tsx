@@ -1,8 +1,23 @@
 import type { AppProps } from 'next/app'
 
-import 'tailwindcss/tailwind.css'
+import TwinMacro from '~styles/TwinMacro'
+import * as S from '../styles/GlobalStyles'
+
+import useWindowSize from '../hooks/useWindowSize'
 
 function MyApp ({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  const windowSize = useWindowSize()
+
+  return (
+    <S.Screen>
+      <TwinMacro />
+      <S.SmallStars size={windowSize} />
+      <S.MediumStars size={windowSize} />
+      <S.LargeStars size={windowSize} />
+      <S.GlowEffect />
+      <S.Eclipse />
+      <Component {...pageProps} />
+    </S.Screen>
+  )
 }
 export default MyApp
